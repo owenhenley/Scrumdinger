@@ -6,12 +6,11 @@
 //
 
 import SwiftUI
+    @Binding var scrum: DailyScrum
 
 struct DetailView: View {
     @State private var data = DailyScrum.Data()
     @State private var isPresentingEditView = false
-    
-    @Binding var scrum: DailyScrum
     
     var body: some View {
         List {
@@ -77,6 +76,9 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
+                NavigationView {
+
         DetailView(scrum: .constant(DailyScrum.sampleData[0]))
+                }
     }
 }
