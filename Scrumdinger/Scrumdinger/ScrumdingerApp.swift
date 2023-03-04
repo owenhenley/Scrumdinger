@@ -11,11 +11,16 @@ import SwiftUI
 struct ScrumdingerApp: App {
     @StateObject private var store = ScrumStore()
     
-//    @State private var scrums = DailyScrum.sampleData
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ScrumsView(scrums: $store.scrums)
+                ScrumsView(scrums: $store.scrums) {
+                    ScrumStore.save(scrums: store.scrums) { result in
+                        if case .failure(let error) = result {
+                            fatalError(error.localizedDescription)
+                        }
+                    }
+                }
             }
             .onAppear {
                 ScrumStore.load { data in

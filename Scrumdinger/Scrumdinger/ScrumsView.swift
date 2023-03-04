@@ -11,6 +11,9 @@ struct ScrumsView: View {
     @Binding var scrums: [DailyScrum]
     @State private var ispresentingNewScrumView = false
     @State private var newScrumData = DailyScrum.Data()
+    @Environment(\.scenePhase) private var scenePhase
+    
+    let saveAction: () -> Void
     
     var body: some View {
         List {
@@ -51,13 +54,16 @@ struct ScrumsView: View {
                     }
             }
         }
+        .onChange(of: scenePhase) { phase in
+            if phase == .inactive { saveAction() }
+        }
     }
 }
 
 struct ScrumsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ScrumsView(scrums: .constant(DailyScrum.sampleData))
+            ScrumsView(scrums: .constant(DailyScrum.sampleData), saveAction: {})
         }
     }
 }
