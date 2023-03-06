@@ -25,14 +25,14 @@ struct ErrorView: View {
                 Spacer()
             }
             .padding()
-            .background(.ultraThinMaterial)
-        .cornerRadius(16)
-        }
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button("Dismiss") {
-                    dismiss()
+//            .background(.ultraThinMaterial)
+            .cornerRadius(16)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Dismiss") {
+                        dismiss()
+                    }
                 }
             }
         }
