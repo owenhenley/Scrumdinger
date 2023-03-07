@@ -30,6 +30,7 @@
 		3ED10FA629B659FF004DA812 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED10FA529B659FF004DA812 /* ErrorWrapper.swift */; };
 		3ED10FA829B65A51004DA812 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED10FA729B65A51004DA812 /* ErrorView.swift */; };
 		3ED10FAA29B66183004DA812 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED10FA929B66183004DA812 /* MeetingTimerView.swift */; };
+		3ED10FAC29B769D4004DA812 /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED10FAB29B769D4004DA812 /* SpeakerArc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		3ED10FA529B659FF004DA812 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
 		3ED10FA729B65A51004DA812 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		3ED10FA929B66183004DA812 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
+		3ED10FAB29B769D4004DA812 /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				3E3BE2E129AFB4780030CEFA /* ThemeView.swift */,
 				3ED10FA729B65A51004DA812 /* ErrorView.swift */,
 				3ED10FA929B66183004DA812 /* MeetingTimerView.swift */,
+				3ED10FAB29B769D4004DA812 /* SpeakerArc.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				3E62F31429ACBE75004A2C13 /* MeetingView.swift in Sources */,
 				3E62F31229ACBE75004A2C13 /* ScrumdingerApp.swift in Sources */,
 				3E3BE2E229AFB4780030CEFA /* ThemeView.swift in Sources */,
+				3ED10FAC29B769D4004DA812 /* SpeakerArc.swift in Sources */,
 				3E62F32829ACE33E004A2C13 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
