@@ -11,7 +11,7 @@ import SwiftUI
 struct ScrumdingerApp: App {
     @StateObject private var store = ScrumStore()
     @State private var errorWrapper: ErrorWrapper?
-    
+
     var body: some Scene {
         WindowGroup {
             NavigationView {
@@ -32,7 +32,7 @@ struct ScrumdingerApp: App {
                     errorWrapper = ErrorWrapper(error: error, guidance: "Could not load the saved scrums")
                 }
             }
-            .sheet(item: $errorWrapper, onDismiss:  {
+            .sheet(item: $errorWrapper, onDismiss: {
                 store.scrums = DailyScrum.sampleData
             }) { wrapper in
                 ErrorView(errorWrapper: wrapper)
