@@ -29,6 +29,7 @@
 		3ECDBC4A29B39968002BBDD6 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECDBC4929B39968002BBDD6 /* ScrumStore.swift */; };
 		3ED10FA629B659FF004DA812 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED10FA529B659FF004DA812 /* ErrorWrapper.swift */; };
 		3ED10FA829B65A51004DA812 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED10FA729B65A51004DA812 /* ErrorView.swift */; };
+		3ED10FAA29B66183004DA812 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED10FA929B66183004DA812 /* MeetingTimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		3ECDBC4929B39968002BBDD6 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 		3ED10FA529B659FF004DA812 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
 		3ED10FA729B65A51004DA812 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		3ED10FA929B66183004DA812 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				3E3BE2E329AFB6220030CEFA /* ThemePicker.swift */,
 				3E3BE2E129AFB4780030CEFA /* ThemeView.swift */,
 				3ED10FA729B65A51004DA812 /* ErrorView.swift */,
+				3ED10FA929B66183004DA812 /* MeetingTimerView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				3E3BE2E029AFA9480030CEFA /* DetailEditView.swift in Sources */,
 				3ECDBC4629B20FA6002BBDD6 /* MeetingFooterView.swift in Sources */,
 				3EBE4F1229AE6E15000C0FB3 /* TrailingIconLabelStyle.swift in Sources */,
+				3ED10FAA29B66183004DA812 /* MeetingTimerView.swift in Sources */,
 				3E62F32129ACDD24004A2C13 /* Theme.swift in Sources */,
 				3ED10FA629B659FF004DA812 /* ErrorWrapper.swift in Sources */,
 				3ECDBC4129B0AA7F002BBDD6 /* MeetingHeaderView.swift in Sources */,
