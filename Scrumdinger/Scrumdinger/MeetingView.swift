@@ -5,15 +5,15 @@
 //  Created by Owen Henley on 27/02/2023.
 //
 
-import SwiftUI
 import AVFoundation
+import SwiftUI
 
 struct MeetingView: View {
     @Binding var scrum: DailyScrum
     @StateObject var scrumTimer = ScrumTimer()
-    
+
     private var player: AVPlayer { AVPlayer.sharedDingPlayer }
-    
+
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 16)
@@ -21,7 +21,7 @@ struct MeetingView: View {
             VStack {
                 MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining, theme: scrum.theme)
                 MeetingTimerView(speakers: scrumTimer.speakers, theme: scrum.theme)
-                    .padding([.leading,.trailing], 4)
+                    .padding([.leading, .trailing], 4)
                 MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
         }

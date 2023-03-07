@@ -15,7 +15,7 @@ class ScrumStore: ObservableObject {
                                     in: .userDomainMask,
                                     appropriateFor: nil,
                                     create: false)
-        .appendingPathComponent("scrums.data")
+            .appendingPathComponent("scrums.data")
     }
     
     static func load() async throws -> [DailyScrum] {
@@ -31,7 +31,7 @@ class ScrumStore: ObservableObject {
         }
     }
     
-    static func load(completion: @escaping (Result<[DailyScrum], Error>)->Void) {
+    static func load(completion: @escaping (Result<[DailyScrum], Error>) -> Void) {
         DispatchQueue.global(qos: .background).async {
             do {
                 let fileURL = try fileURL()
@@ -68,7 +68,7 @@ class ScrumStore: ObservableObject {
         }
     }
     
-    static func save(scrums: [DailyScrum], completion: @escaping (Result<Int, Error>)->Void) {
+    static func save(scrums: [DailyScrum], completion: @escaping (Result<Int, Error>) -> Void) {
         DispatchQueue.global(qos: .background).async {
             do {
                 let data = try JSONEncoder().encode(scrums)

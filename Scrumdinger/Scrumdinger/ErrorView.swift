@@ -10,7 +10,7 @@ import SwiftUI
 struct ErrorView: View {
     let errorWrapper: ErrorWrapper
     @Environment(\.dismiss) private var dismiss
-    
+
     var body: some View {
         NavigationView {
             VStack {
@@ -43,7 +43,7 @@ struct ErrorView_Previews: PreviewProvider {
     enum errorSample: Error {
         case testError
     }
-    
+
     static var previews: some View {
         ErrorView(errorWrapper: ErrorWrapper(error: errorSample.testError, guidance: "This is an example"))
     }
