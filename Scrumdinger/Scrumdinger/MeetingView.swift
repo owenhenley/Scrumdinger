@@ -13,7 +13,6 @@ struct MeetingView: View {
     @StateObject var scrumTimer = ScrumTimer()
     @StateObject var speechRecognizer = SpeechRecognizer()
     @State private var isRecording = false
-
     private var player: AVPlayer { AVPlayer.sharedDingPlayer }
 
     var body: some View {
@@ -44,7 +43,7 @@ struct MeetingView: View {
             scrumTimer.stopScrum()
             speechRecognizer.stopTranscribing()
             isRecording = false
-            let newHistory = History(attendees: scrum.attendees, lengthInMinutes: scrum.timer.secondsElapsed / 60)
+            let newHistory = History(attendees: scrum.attendees, lengthInMinutes: scrum.timer.secondsElapsed / 60, transcript: speechRecognizer.transcript)
             scrum.history.insert(newHistory, at: 0)
         }
         .navigationBarTitleDisplayMode(.inline)
